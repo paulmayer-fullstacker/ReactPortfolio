@@ -3,14 +3,14 @@
 import portfolioPageImage from '../assets/_PortfolioCapture.png';
 import portfolioPageReadme from '../assets/_Portfolio_readme.md';
 
-import notepadImage from '../assets/NotePadCapture3.png';
-import notepadReadme from '../assets/notePad_readme.md';
+import notepadImage from '../assets/_NotePadCapture3.png';
+import notepadReadme from '../assets/_notePad_readme.md';
 
 import weatherAppImage from '../assets/WeatherAppCapture.png';
 import weatherAppReadme from '../assets/weatherApp_readme.md';
 
-import multiPageImage from '../assets/MultiPageCapture.png';
-import multiPageReadme from '../assets/multiPage_readme.md';
+import multiPageImage from '../assets/_MultiPageCapture.png';
+import multiPageReadme from '../assets/_multiPage_readme.md';
 
 import bootstrapeImage from '../assets/BootstrapCapture.png';
 import bootstrapReadme from '../assets/Bootstrap_readme.md';
@@ -18,11 +18,11 @@ import bootstrapReadme from '../assets/Bootstrap_readme.md';
 import toDoListImage from '../assets/ToDoListCapture.png';
 import toDoListReadme from '../assets/ToDoList_readme.md';
 
-import readMeFileGenyImage from '../assets/ReadMeFileGenyCapture.png';
-import readMeFileGenyReadme from '../assets/ReadMeFileGeny_readme.md';
+import readMeFileGenyImage from '../assets/_ReadMeFileGenyCapture.png';
+import readMeFileGenyReadme from '../assets/_ReadMeFileGeny_readme.md';
 
-import blogPostImage from '../assets/BlogPostCapture.png';
-import blogPostReadme from '../assets/BlogPost_readme.md';
+import blogPostImage from '../assets/_BlogPostCapture.png';
+import blogPostReadme from '../assets/_BlogPost_readme.md';
 
 export const projects = [
   {
