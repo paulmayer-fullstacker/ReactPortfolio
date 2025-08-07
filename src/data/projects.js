@@ -1,7 +1,7 @@
 // src/data/projects.js
 // Asset imports:
-import portfolioPageImage from '../assets/PortfolioCapture.png';
-import portfolioPageReadme from '../assets/Portfolio_readme.md';
+import portfolioPageImage from '../assets/_PortfolioCapture.png';
+import portfolioPageReadme from '../assets/_Portfolio_readme.md';
 
 import notepadImage from '../assets/NotePadCapture3.png';
 import notepadReadme from '../assets/notePad_readme.md';
