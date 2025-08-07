@@ -71,10 +71,12 @@ To build our application, we also need to install the Vite build tool, and a num
 | Run the application                                                  |$: npm run dev                 |
 |                                                                      |                             |
 
-Notes
-Command ‘npm create vite@latest .’ Creates the React project in the current folder. The command ‘npm create vite@latest my-first-react-app’ creates a new project folder (my-first-react-app), and builds the React project there.
-Command ‘npm create vite@latest .’ will create the package.json file. After the command runs, the user is prompted to select a framework and a language. After this selection, the user will be prompted to : ‘Run npm install’.
-Command ‘npm install’ creates the node_modules directory, installs necessary dependencies and creates the package-lock.json file.
+### Notes:
+- Command ‘npm create vite@latest .’ Creates the React project in the current folder. The command ‘npm create vite@latest my-first-react-app’ creates a new project folder (my-first-react-app), and builds the React project there.  
+
+- Command ‘npm create vite@latest .’ will create the package.json file. After the command runs, the user is prompted to select a framework and a language. After this selection, the user will be prompted to : ‘Run npm install’.  
+
+- Command ‘npm install’ creates the node_modules directory, installs necessary dependencies and creates the package-lock.json file.
 
 Based on our configuration files, the application frontend will now be accessible at http://localhost:5173/
 
