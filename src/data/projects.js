@@ -6,8 +6,8 @@ import portfolioPageReadme from '../assets/_Portfolio_readme.md';
 import notepadImage from '../assets/_NotePadCapture3.png';
 import notepadReadme from '../assets/_notePad_readme.md';
 
-import weatherAppImage from '../assets/WeatherAppCapture.png';
-import weatherAppReadme from '../assets/weatherApp_readme.md';
+import weatherAppImage from '../assets/_WeatherAppCapture.png';
+import weatherAppReadme from '../assets/_weatherApp_readme.md';
 
 import multiPageImage from '../assets/_MultiPageCapture.png';
 import multiPageReadme from '../assets/_multiPage_readme.md';
