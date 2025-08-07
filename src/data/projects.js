@@ -12,11 +12,11 @@ import weatherAppReadme from '../assets/_weatherApp_readme.md';
 import multiPageImage from '../assets/_MultiPageCapture.png';
 import multiPageReadme from '../assets/_multiPage_readme.md';
 
-import bootstrapeImage from '../assets/BootstrapCapture.png';
-import bootstrapReadme from '../assets/Bootstrap_readme.md';
+import bootstrapeImage from '../assets/_BootstrapCapture.png';
+import bootstrapReadme from '../assets/_Bootstrap_readme.md';
 
-import toDoListImage from '../assets/ToDoListCapture.png';
-import toDoListReadme from '../assets/ToDoList_readme.md';
+import toDoListImage from '../assets/_ToDoListCapture.png';
+import toDoListReadme from '../assets/_ToDoList_readme.md';
 
 import readMeFileGenyImage from '../assets/_ReadMeFileGenyCapture.png';
 import readMeFileGenyReadme from '../assets/_ReadMeFileGeny_readme.md';
