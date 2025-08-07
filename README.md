@@ -25,55 +25,35 @@ The design of this application was largely dictated be the specification brief f
 
 The dynamic application was primarily built using React, using several key libraries to function:
 
-#### React Router DOM:
+- React Router DOM: This library handles the client-side routing. It allows the application to offer multiple pages (Home, Projects, and Contact) with unique URLs. When the user switches between pages, only new components are rendered. Thus, removing the need for a full page reload, providing a fast and smooth user experience.
 
-This library handles the client-side routing. It allows the application to offer multiple pages (Home, Projects, and Contact) with unique URLs. When the user switches between pages, only new components are rendered. Thus, removing the need for a full page reload, providing a fast and smooth user experience.
+- Lucide React: This is an icon library used to display the theme toggle icons (the sun and moon icons) in the Navbar.
 
-#### Lucide React:
-
-This is an icon library used to display the theme toggle icons (the sun and moon icons) in the Navbar.
-
-#### Vite:
-
-The Vite build tool offers a fast front-end development server that bundles our code for production.
+- Vite: The Vite build tool offers a fast front-end development server that bundles our code for production.
 
 ### Application Structure
 
 The application is organized into a logical and component-based structure, which is a best practice for React projects:
 
-#### Components:
+- Components: Reusable UI pieces are stored in the src/components directory. This includes the Navbar, Footer, ProjectCard, and AboutMeCard.
 
-Reusable UI pieces are stored in the src/components directory. This includes the Navbar, Footer, ProjectCard, and AboutMeCard.
+- Pages: The src/pages directory contains the main components for each route in our application (Home.jsx, Project.jsx, and Contact.jsx).
 
-#### Pages:
+- Data: The src/data directory is used to store static data, such as project details (projects.js) and contact referral options (contactReferrals.js). The separation of data from UI code makes the application easier to manage and update.
 
-The src/pages directory contains the main components for each route in our application (Home.jsx, Project.jsx, and Contact.jsx).
-
-#### Data:
-
-The src/data directory is used to store static data, such as project details (projects.js) and contact referral options (contactReferrals.js). The separation of data from UI code makes the application easier to manage and update.
-
-#### Styling:
-
-The app uses CSS variables defined in src/index.css for theming. This allows the application to switch between light and dark modes by simply toggling a class on the <html> element. The app also uses inline styling within the JSX for component-specific layouts.
+- Styling: The app uses CSS variables defined in src/index.css for theming. This allows the application to switch between light and dark modes by simply toggling a class on the <html> element. The app also uses inline styling within the JSX for component-specific layouts.
 
 ### Programming Concepts
 
 The code was designed with some fundamental React / JavaScript concepts in mind:
 
-#### Functional Components and Hooks:
+- Functional Components and Hooks: The entire application is built using functional components, employing useState and useEffect hooks to manage component state and side effects, such as the user's theme preference (light/dark).
 
-The entire application is built using functional components, employing useState and useEffect hooks to manage component state and side effects, such as the user's theme preference (light/dark).
-####Conditional Rendering:
-The application conditionally renders components or elements based on state or properties (props). For example, the "What other way?" field on the contact form only appears when the user selects "Other,". Also, a ProjectCard is only rendered for projects that match the active filter, when a technology filter is selected.
+- Conditional Rendering: The application conditionally renders components or elements based on state or properties (props). For example, the "What other way?" field on the contact form only appears when the user selects "Other,". Also, a ProjectCard is only rendered for projects that match the active filter, when a technology filter is selected.
 
-#### Props (properties):
+- Props (properties): Data is passed from parent components to child components using props, allowing for a high degree of reusability. For instance, the Home page passes project data as a prop to the ProjectCard component.
 
-Data is passed from parent components to child components using props, allowing for a high degree of reusability. For instance, the Home page passes project data as a prop to the ProjectCard component.
-
-#### Array Methods:
-
-The code attempts to make effective use of JavaScript array methods. For example:  .map() to render lists of items (e.g., projects, technologies, filter buttons),  and .filter() to dynamically narrow down the list of projects based on user input.
+- Array Methods: The code attempts to make effective use of JavaScript array methods. For example:  .map() to render lists of items (e.g., projects, technologies, filter buttons),  and .filter() to dynamically narrow down the list of projects based on user input.
 
 ---
 
