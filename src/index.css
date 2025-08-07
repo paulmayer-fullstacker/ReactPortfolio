@@ -1,0 +1,202 @@
+/* src/index.css */
+
+/* Global Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base CSS Variables for Light Mode */
+:root {
+  --primary-colour: #46388bff; /* A purple */
+  --secondary-colour: #007bff; /* A blue */
+  --accent-colour: #ffc107;   /* A yellow */
+  --background-colour: #f8f9fa; /* Light background */
+  --text-colour: #343a40;     /* Dark text */
+  --card-background: #ffffff; /* White card */
+  --card-border: #e0e0e0;     /* Light grey border */
+  --link-colour: var(--primary-colour);
+  --link-hover-colour: var(--secondary-colour);
+  --border-radius: 8px;
+  --box-shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --box-shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* CSS Variables for Dark Mode */
+html.dark {
+  --primary-colour: #9382e3ff; /* Lighter purple */
+  --secondary-colour: #03dac6; /* Teal */
+  --accent-colour: #ffeb3b;   /* Brighter yellow */
+  --background-colour: #121212; /* Dark background */
+  --text-colour: #e0e0e0;     /* Light text */
+  --card-background: #1e1e1e; /* Darker card */
+  --card-border: #333333;     /* Dark grey border */
+  --link-colour: var(--secondary-colour);
+  --link-hover-colour: var(--primary-colour);
+  --box-shadow-light: 0 4px 8px rgba(0, 0, 0, 0.3);
+  --box-shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Base Body Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: var(--background-colour);
+  color: var(--text-colour);
+  /* When coulour changes (light/dark), it happens smoothly over 0.3 seconds with an "ease" timing function. */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container for pages */
+.page-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-grow: 1; /* Allows pages to expand and push footer down */
+}
+
+/* Basic Link Styling */
+a {
+  color: var(--link-colour);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--link-hover-colour);
+  text-decoration: underline;
+}
+
+hr {
+  /* Remove the default browser styling */
+  border: none;
+  /* Set a height to make the line visible, rather than using border */
+  height: 2px;
+  /* Set the color of the line */
+  background-color: var(--primary-colour); 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .page-container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start !important; /* Override inline style */
+  }
+  nav a {
+    margin-left: 0 !important; /* Override inline style */
+    margin-top: 10px;
+  }
+  nav div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .theme-toggle-button {
+    top: 10px !important;
+    right: 10px !important;
+  }
+}
+
+/* Contact Form Card */
+.contact-form-card {
+  background-color: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-light);
+  padding: 30px;
+  margin: 15px auto 40px auto;
+  max-width: 1111px;
+  width: calc(100% - 30px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-hover);
+}
+
+/* Contact Form Styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 1em;
+  color: var(--text-colour);
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--card-border);
+  background-color: var(--background-colour);
+  color: var(--text-colour);
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--primary-colour);
+  box-shadow: 0 0 0 2px rgba(70, 56, 139, 0.2);
+}
+
+/* Specific styling for the submit button */
+.submit-button {
+  background-color: var(--primary-colour);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  //align-self: flex-start; /* Align button to the centre */
+  align-self: center;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: var(--secondary-colour);
+}
+
+@media (max-width: 768px) {
+  .contact-form-card {
+    padding: 20px;
+  }
+  .submit-button {
+    width: 100%; /* Make button full width on smaller screens */
+    align-self: stretch;
+  }
+}
