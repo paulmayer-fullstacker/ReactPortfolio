@@ -87,16 +87,16 @@ Based on our configuration files, the application frontend will now be accessibl
 ### GitHub:
 
 The source, dependency, and asset files have been pushed to my GitHub 'ReactPortfolio' repository for public access at: https://github.com/paulmayer-fullstacker/ReactPortfolio. Before pushing to gitHub, a .gitignore file was created to exclude (ignore) the node_modules dependency directory and the Vite build files.
+
 The addition of this line in the .gitignore file 'node_modules/' causes git to ignore a node_modules directory, held within any subdirectory.
-The addition of /dist, /build, and /out prevents Vite’s compiled and optimized version of the code (for production) from being pushed to version control. These files will be regenerated on deployment to onward environments.
+
+The addition of '/dist', '/build', and '/out', prevents Vite’s compiled and optimized version of the code (for production) from being pushed to version control. These files will be regenerated on deployment to onward environments.
 
 ### Render:
 
-The project has also been deployed to the Render hosting site, for public access. The URL is https://ReactPortfolio-gauu.onrender.com/. It is recommended to use an incognito browser window to access the solution. The project has been hosted on a free tier of Render. So, after a few minutes of inactivity, the resources are shut down. Thus, on initial access, the service may take a few minutes to start.
+The project has also been deployed to the Render hosting site, for public access. The URL is https://reactportfolio-qc9v.onrender.com/. It is recommended to use an incognito browser window to access the solution. 
 
-### YouTube:
-
-In lieu of the Render shortfall, a short video illustrating use of the Tech Blog application was uploaded to YouTube. The (unlisted) video can be viewed at: https://youtu.be/-A7fg039kEc
+The project has been hosted on a free tier of Render. So, after a few minutes of inactivity, the resources are shut down. Thus, on initial access, the service may take a few minutes to start.
 
 ---
 
